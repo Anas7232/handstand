@@ -13,26 +13,23 @@ function App() {
         className="absolute w-full h-full object-cover"
       />
 
-      {/* Overlay */}
-      <div className="absolute"></div>
-
       {/* Navigation Bar */}
       <div className="absolute top-0 left-0 w-full flex items-center justify-between px-6 md:px-16 py-6">
         <div className="hidden md:flex space-x-2 text-white font-medium">
-        <div className="text-white text-2xl font-bold px-5 text-gray-900">HANDSTAND</div>
-          <a href="#" className="text-xs pt-[10px] text-gray-800">Company Events</a>
-          <a href="#" className="text-xs pt-[10px] text-gray-800">Public Games</a>
-          <a href="#" className="text-xs pt-[10px] text-gray-800">Escape Rooms</a>
-          <a href="#" className="text-xs pt-[10px] text-gray-800">About Us</a>
+        <div className="text-white text-3xl font-bold px-5 text-gray-900">HANDSTAND</div>
+          <a href="#" className="text-sm px-2 pt-[10px] text-gray-700">Company Events</a>
+          <a href="#" className="text-sm pt-[10px] text-gray-700">Public Games</a>
+          <a href="#" className="text-sm px-2 pt-[10px] text-gray-700">Escape Rooms</a>
+          <a href="#" className="text-sm pt-[10px] text-gray-700">About Us</a>
         </div>
-        <button className="bg-orange-600 hover:bg-orange-800 text-white px-10 py-2 rounded-md text-sm font-semibold">
+        <button className="bg-orange-600 hover:bg-orange-800 text-white px-10 py-2 rounded-md text-xs font-semibold">
           Get a Quote
         </button>
       </div>
 
       {/* Hero Text */}
       <div className="absolute left-6 md:left-16 bottom-0 transform -translate-y-1/2 text-white">
-        <p className="text-lg md:text-xl font-light">An epic</p>
+        <p className="text-xl md:text-xl font-light ">An epic</p>
         <h1 className="text-4xl md:text-6xl font-bold leading-tight">
           Scavenger Hunt<br />
           in San Francisco
