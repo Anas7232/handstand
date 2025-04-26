@@ -3,6 +3,7 @@ import { FiMenu, FiX } from "react-icons/fi";
 import '../App.css'
 import heroimg from '../assets/HeroImage.png'
 import herombl from '../assets/heroimg.png'
+import { Check } from "lucide-react";
 
 const HeroSection = () => {
 
@@ -28,7 +29,7 @@ const HeroSection = () => {
                 {/* Navigation Bar */}
                 <div className="absolute top-0 left-0 w-full flex items-center justify-between px-6 md:px-16 py-6 z-20">
                     <div className="flex items-center space-x-2">
-                        <div className="text-white lg:text-3xl text-2xl font-bold px-5 text-gray-900">
+                        <div className="text-black lg:text-3xl text-2xl font-bold px-5 text-gray-900">
                             HANDSTAND
                         </div>
 
@@ -67,14 +68,46 @@ const HeroSection = () => {
                 )}
 
                 {/* Hero Text */}
-                <div className="absolute left-6 md:left-16 bottom-0 hidden lg:block transform -translate-y-1/2 text-white">
+                <div className="absolute left-6 md:left-20 bottom-0 hidden lg:block transform -translate-y-1/2 text-white">
                     <p className="text-xl md:text-xl font-light">An epic</p>
-                    <h1 className="text-4xl md:text-7xl font-bold leading-tight">
+                    <h1 className="text-4xl md:text-[80px] font-bold leading-tight">
                         Scavenger Hunt<br />
                         in San Francisco
                     </h1>
                 </div>
             </div>
+
+            <div className="absolute w-full bg-cream py-8 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between gap-8">
+                {/* Text & Button */}
+                <div className="max-w-xl">
+                    <p className="text-gray-800 text-xl leading-relaxed mb-4">
+                        Navigate the hills and hidden alleys of San Francisco, from the
+                        Golden Gate Bridge to unique local spots. This hunt is perfect for
+                        teams looking for a challenging and fun urban adventure.
+                    </p>
+                    <button className="bg-orange-600 text-white text-sm px-9 py-2 rounded-lg hover:bg-orange-800 transition">
+                        Get a Quote
+                    </button>
+                </div>
+
+                {/* Feature List */}
+                <div className="absolute text-xl top-[-30px] right-[200px] bg-white rounded-xl shadow-lg py-7 px-4 space-y-3 w-[400px]">
+                    {[
+                        "Location-Based",
+                        "Polished Technology",
+                        "Scales to Hundreds of Players",
+                    ].map((item, index) => (
+                        <div
+                            key={index}
+                            className="flex items-center border-b last:border-b-0 pb-3 last:pb-0"
+                        >
+                            <Check className="bg-green-600 size-5 p-[3px] text-white rounded-full mr-5 mt-1" />
+                            <span className="text-gray-800 font-medium">{item}</span>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
         </>
     )
 }
