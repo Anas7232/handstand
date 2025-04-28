@@ -29,7 +29,7 @@ const HeroSection = () => {
                 {/* Navigation Bar */}
                 <div className="absolute top-0 left-0 w-full flex items-center justify-between px-6 md:px-16 py-6 z-20">
                     <div className="flex items-center space-x-2">
-                        <div className="text-black lg:text-3xl text-2xl font-bold px-5 text-gray-900">
+                        <div className="text-black cursor-pointer lg:text-3xl text-2xl font-bold px-5 text-gray-900">
                             HANDSTAND
                         </div>
 
