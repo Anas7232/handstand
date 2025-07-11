@@ -101,7 +101,7 @@ const HeroSection = () => {
                             key={index}
                             className="flex items-center border-b last:border-b-0 pb-3 last:pb-0"
                         >
-                            <Check className="bg-green-600 size-5 p-[3px] text-white rounded-full mr-5 mt-1" />
+                            <Check className="bg-[#43BD0A] size-5 p-[3px] text-white rounded-full mr-5 mt-1" />
                             <span className="text-gray-800 font-medium">{item}</span>
                         </div>
                     ))}
